@@ -26,7 +26,7 @@ export default function Courses() {
       image: science,
       title: "Science",
       description:
-        "Empowering Future Scientists and Engineers: BASE PU College by BASE Charitable Foundation – Quality Science Education for NEET/JEE Aspirants with 28+ Years of Academic Excellence",
+        "Empowering Future Scientists and Engineers: Vidya Sadhana PU College by Vidya Sadhana Charitable Foundation – Quality Science Education for NEET/JEE Aspirants with 28+ Years of Academic Excellence",
       link: "https://www.cauverypucolleges.com/science/",
       img: <BiotechIcon sx={{ fontSize: '1.5rem', marginLeft: 1 }} />,
     },
