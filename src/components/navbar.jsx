@@ -37,7 +37,7 @@ const Navbar = () => {
     <Box sx={{ width: "100%", display: "flex", flexDirection: "column", alignItems: "center", zIndex: "1100" }}>
       <AppBar
         sx={{
-          position: "sticky",
+          position: "static",
           top: 0,
           background: 'linear-gradient(90deg, #ffffff 25%, #C6D8FE 75%)',
           boxShadow: 3,

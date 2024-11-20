@@ -7,13 +7,15 @@ import {
   useMediaQuery
 } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
-
+import { useState } from 'react';
+import Modal from './modal';
 export default function Brochure() {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
-
+  const [open,setOpen]=useState(false);
   return (
     <Box
+    id="brochure"
       sx={{
         position: 'relative',
         top: 80,
@@ -77,6 +79,7 @@ export default function Brochure() {
       >
         <Button
           variant="contained"
+          onClick={() => setOpen(true)}
           sx={{
             width: '250px',
             height: '60px',
@@ -102,9 +105,10 @@ export default function Brochure() {
         >
           Download Brochure <DownloadIcon sx={{ fontSize: '1.5rem', color: '#fff' }} />
         </Button>
-
+          
         <Button
           variant="outlined"
+          href="#contact"
           sx={{
             width: '150px',
             height: '60px',
@@ -119,15 +123,14 @@ export default function Brochure() {
               backgroundColor: '#f4f4f4',
             },
             boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
-            transition: 'all 0.3s ease',
-            '&:hover': {
-              transform: 'scale(1.05)',
-            },
+            
           }}
         >
           Contact Us
         </Button>
+        
       </Box>
+      {open && <Modal onClose={() => setOpen(false)}/>}
     </Box>
   );
 }

@@ -71,6 +71,7 @@ export default function Apply() {
         </Typography>
         <Box sx={{ display: 'flex', justifyContent: isMobile ? 'center' : 'left', gap: 2 }}>
           <Button
+          href='https://cauverygroupofinstitutions.com/cauvery-pu-college/'
             variant="contained"
             color="primary"
             size="large"

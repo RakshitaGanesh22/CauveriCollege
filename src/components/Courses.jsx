@@ -18,7 +18,7 @@ import science from '../asset/science.jpg';
 import commerce from '../asset/commerce.jpg';
 
 export default function Courses() {
-  const isMobile = useMediaQuery('(max-width:800px)');
+  const isMobile = useMediaQuery('(max-width:1100px)');
   const theme = useTheme();
 
   const courses = [
@@ -79,7 +79,7 @@ export default function Courses() {
             <Card
               sx={{
                 boxShadow: 5,
-                height: isMobile ? 400 : 530, // Responsive card height
+                height: isMobile ? 430 : 530, // Responsive card height
                 width: isMobile ? '100%' : 450, // Responsive card width
                 display: 'flex',
                 flexDirection: 'column',

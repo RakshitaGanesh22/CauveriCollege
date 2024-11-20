@@ -19,6 +19,7 @@ export default function Contact() {
         background: 'linear-gradient(135deg, #C6D8FE, #F6F6F6)', // Subtle gradient for background
         boxShadow: '0px 10px 40px rgba(0, 0, 0, 0.1)',
       }}
+      id="contact"
     >
       <Typography
         variant="h2"
@@ -89,22 +90,7 @@ export default function Contact() {
           >
             <PhoneIcon sx={{ mr: 2, fontSize: '1.5rem' }} />
             <Typography variant="h6" color="inherit">
-              +91 99868 17230
-            </Typography>
-          </Box>
-
-          <Box
-            sx={{
-              display: 'flex',
-              alignItems: 'center',
-              mb: 3,
-              '&:hover': { color: theme.palette.secondary.light },
-              transition: 'color 0.3s ease-in-out',
-            }}
-          >
-            <PhoneIcon sx={{ mr: 2, fontSize: '1.5rem' }} />
-            <Typography variant="h6" color="inherit">
-              +91 96596 56006
+              +91 9459456585
             </Typography>
           </Box>
 
@@ -119,7 +105,7 @@ export default function Contact() {
           >
             <EmailIcon sx={{ mr: 2, fontSize: '1.5rem' }} />
             <Typography variant="h6" color="inherit">
-              cauvery.academics@gmail.com
+              admissions@cauverycollege.com
             </Typography>
           </Box>
 
@@ -165,8 +151,8 @@ export default function Contact() {
         <Box
           sx={{
             position: 'absolute',
-            top: 'calc(100% - 25px)',
-            left: 'calc(50% - 12px)',
+            top: 'calc(60% )',
+            left: 'calc(50% )',
             backgroundColor: '#FF6F61',
             color: '#fff',
             width: '25px',

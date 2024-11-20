@@ -1,8 +1,14 @@
 import React from 'react';
-import { Button, useMediaQuery } from '@mui/material';
+import { Button, useMediaQuery,Box } from '@mui/material';
+import { useState } from 'react';
 import DownloadIcon from '@mui/icons-material/Download';
-
+import Modal from './modal.jsx';
 export default function Admission() {
+  const [open, setOpen] = useState(false);
+
+  
+
+
   // Define media queries for responsiveness
   const isSmallScreen = useMediaQuery('(max-width:600px)'); // For small screens
   const isMediumScreen = useMediaQuery('(max-width:960px)'); // For medium screens
@@ -22,11 +28,16 @@ export default function Admission() {
   };
 
   return (
+    <>
     <Button
+    href="#brochure"
       variant="contained"
       sx={buttonStyles}
+      onClick={() => setOpen(true)}
     >
       Download Brochure <DownloadIcon sx={{ ml: 1 }} />
+      
     </Button>
+    </>
   );
 }
